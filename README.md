@@ -1,4 +1,4 @@
-# Zuvius Training Portal
+# Zuvius Training Portal Version 2
 
 A modern Learning Management System (LMS) built for Zuvius Lifesciences to deliver employee training, assessments, certification, and progress tracking.
 

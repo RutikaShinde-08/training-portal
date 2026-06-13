@@ -1,0 +1,291 @@
+/* PAGE */
+.login-page,
+.signup-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f6f9fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MAIN CONTAINER */
+.login-box,
+.signup-box {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background: #ffffff;
+}
+
+/* LEFT PANEL */
+.login-panel,
+.signup-panel {
+  width: 50%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f4faff 0%, #e8f4ff 100%);
+  border-radius: 0 0 180px 0;
+  padding: 55px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-panel::after,
+.signup-panel::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  background: #9ec8ff;
+  border-radius: 50%;
+  right: -160px;
+  bottom: -160px;
+  opacity: 0.65;
+}
+
+.brand-area {
+  margin-bottom: 55px;
+  z-index: 1;
+}
+
+.brand-logo {
+  width: 210px;
+  margin-bottom: 10px;
+}
+
+.login-panel h1,
+.signup-panel h1 {
+  color: #0f2f55;
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 18px;
+  z-index: 1;
+}
+
+.login-panel h1 span,
+.signup-panel h1 span {
+  color: #e8340c;
+}
+
+.login-panel p,
+.signup-panel p {
+  color: #6b7c93;
+  font-size: 20px;
+  line-height: 1.6;
+  z-index: 1;
+}
+
+/* BOTTOM LINK BOX */
+.create-box,
+.login-link-box {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  z-index: 1;
+}
+
+.create-box span,
+.login-link-box span {
+  color: #0f2f55;
+  font-size: 17px;
+}
+
+.create-box a,
+.login-link-box a {
+  background: transparent;
+  color: #005eea;
+  border: 1.5px solid #005eea;
+  text-decoration: none;
+  padding: 14px 34px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.create-box a:hover,
+.login-link-box a:hover {
+  background: #005eea;
+  color: white;
+}
+
+/* RIGHT PANEL */
+.form-panel {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 95px;
+}
+
+.form-panel h2 {
+  text-align: center;
+  color: #0f2f55;
+  font-size: 58px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.form-panel .title-line {
+  width: 70px;
+  height: 4px;
+  background: #005eea;
+  border-radius: 50px;
+  margin: 0 auto 45px;
+}
+
+/* FORM */
+.login-form,
+.signup-form {
+  width: 100%;
+}
+
+.input-group {
+  height: 62px;
+  background: #ffffff;
+  border: 1.5px solid #d8e0ea;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  margin-bottom: 22px;
+}
+
+.input-group i {
+  color: #005eea;
+  margin-right: 14px;
+  font-size: 17px;
+}
+
+.input-group input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #0f2f55;
+}
+
+.input-group input::placeholder {
+  color: #98a4b3;
+}
+
+.forgot-password {
+  text-align: right;
+  color: #005eea;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+
+/* BUTTON */
+.login-form button,
+.signup-form button {
+  width: 100%;
+  height: 62px;
+  border: none;
+  border-radius: 11px;
+  background: #005eea;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-form button:hover,
+.signup-form button:hover {
+  background: #004bc0;
+}
+
+/* PASSWORD */
+.password-group {
+  position: relative;
+}
+
+.password-group input {
+  padding-right: 45px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #64748b;
+  font-size: 16px;
+}
+
+.password-toggle:hover {
+  color: #005eea;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .login-box,
+  .signup-box {
+    flex-direction: column;
+  }
+
+  .login-panel,
+  .signup-panel,
+  .form-panel {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .login-panel,
+  .signup-panel {
+    border-radius: 0 0 70px 70px;
+    padding: 40px 25px;
+  }
+
+  .brand-logo {
+    width: 150px;
+  }
+
+  .login-panel h1,
+  .signup-panel h1 {
+    font-size: 38px;
+  }
+
+  .login-panel p,
+  .signup-panel p {
+    font-size: 15px;
+  }
+
+  .create-box,
+  .login-link-box {
+    margin-top: 40px;
+  }
+
+  .form-panel {
+    padding: 45px 25px;
+  }
+
+  .form-panel h2 {
+    font-size: 42px;
+  }
+
+  .input-group {
+    height: 54px;
+  }
+
+  .login-form button,
+  .signup-form button {
+    height: 54px;
+    font-size: 18px;
+  }
+}

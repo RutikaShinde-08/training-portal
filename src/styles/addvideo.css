@@ -1,0 +1,196 @@
+/* ==========================================================================
+   Admin Content Creation Form Stylesheet - Course Onboarding Portal
+   ========================================================================== */
+
+.admin-form-container {
+  width: 100%;
+  max-width: 800px; /* Provides proper layout focus for information entry cards */
+  margin: 0 auto;
+  padding: 40px 24px 80px 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Backlink Contextual Shortcut navigation wrapper */
+.admin-nav-back-row {
+  margin-bottom: 24px;
+}
+
+.btn-admin-back {
+  display: inline-block;
+  color: #64748b;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.btn-admin-back:hover {
+  color: #15803d; /* Switches tone highlight cleanly upon track interaction */
+}
+
+/* Core Interface Creation Card Block Layout */
+.admin-form-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.02), 0 2px 4px -1px rgba(15, 23, 42, 0.02);
+}
+
+.admin-form-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.025em;
+}
+
+.admin-form-subtitle {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0 0 32px 0;
+  line-height: 1.4;
+}
+
+/* Explicit Form Formats Matrix */
+.admin-core-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.admin-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.admin-field-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+/* Form Entry Node Fields Design rules */
+.admin-form-input,
+.admin-form-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 0.975rem;
+  color: #0f172a;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+.admin-form-input:focus,
+.admin-form-textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+/* Specialty font context for system video route string mapping */
+.admin-form-input.source-code-font {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.9rem;
+  background-color: #fafafa;
+}
+
+/* Double-Column Metric Alignment Layout Grid rule */
+.admin-form-row-split {
+  display: flex;
+  gap: 20px;
+}
+
+/* Action Control Matrix Submission Centers */
+.admin-form-submit-zone {
+  margin-top: 12px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 24px;
+}
+
+.btn-admin-submit-form {
+  width: 100%;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #2563eb; /* Platform Identity Blue Accent */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.15);
+}
+
+.btn-admin-submit-form:hover {
+  background-color: #1d4ed8;
+}
+
+/* Media Adaptation Overrides rules */
+@media (max-width: 640px) {
+  .admin-form-card {
+    padding: 24px;
+  }
+  .admin-form-row-split {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+/* ==========================================================================
+   Fixed Route Prefix Layout Framework Inject
+   ========================================================================== */
+
+.prefix-input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.prefix-input-wrapper:focus-within {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.route-fixed-prefix {
+  background-color: #f1f5f9;
+  color: #64748b;
+  font-family: SFMono-Regular, Consolas, Monaco, monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-right: 1px solid #cbd5e1;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* Overrides inner styles to turn off redundant borders/shadows inside the wrapper container */
+.admin-form-input.prefix-attached {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 12px 14px;
+}
+
+.field-hint-text {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.field-hint-text strong {
+  color: #0f172a;
+}

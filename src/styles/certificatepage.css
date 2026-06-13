@@ -1,0 +1,129 @@
+/* ==========================================================================
+   Certificate Screen Layout Stylesheet - Employee Training Portal
+   ========================================================================== */
+
+.cert-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* System Loading Indicator */
+.cert-status-msg {
+  text-align: center;
+  margin-top: 100px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Header Section Formatting */
+.cert-header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+  gap: 20px;
+}
+
+.cert-main-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+  letter-spacing: -0.02em;
+}
+
+.cert-subtitle {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Preview Area Box - Fixed to contain the 1600px scaling matrix */
+.cert-canvas-preview-frame {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  margin-bottom: 24px;
+  
+  /* Layout constraints preventing layout engine overflow bleed */
+  overflow: hidden;
+  height: 660px; /* Aligns visually with the 1100px canvas scale height */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* Canvas Element Wrapper Frame Box */
+.cert-canvas-element {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  background-color: #ffffff;
+  flex-shrink: 0; /* Keeps the scale wrapper from squeezing on window shrink */
+}
+
+/* Execution Button Trigger Footer Bar Layout */
+.cert-trigger-footer {
+  text-align: center;
+  margin-top: 0; /* Reset negative layout bounds completely */
+  padding: 24px 0 60px 0;
+}
+
+/* Interactive Control Interface Elements */
+.btn-cert-primary {
+  padding: 16px 40px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #2563eb; /* Platform Identity Blue */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
+}
+
+.btn-cert-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-cert-secondary {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #475569;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-cert-secondary:hover {
+  background-color: #f1f5f9;
+  color: #0f172a;
+  border-color: #94a3b8;
+}
+
+/* Responsive Media Handling overrides */
+@media (max-width: 768px) {
+  .cert-header-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .btn-cert-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}
